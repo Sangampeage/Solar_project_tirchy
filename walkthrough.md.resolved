@@ -1,0 +1,31 @@
+# Walkthrough: Solar Project Trichy
+
+This guide explains how to run the full-stack solar application.
+
+## 1. Backend Setup (FastAPI)
+Navigate to the backend directory and start the API server.
+
+```bash
+cd Solar_project_trichy/backend
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+```
+*The API will be available at http://localhost:8000.*
+
+## 2. Frontend Setup (Vite + React)
+Navigate to the frontend directory and start the development server.
+
+```bash
+cd Solar_project_trichy/frontend
+npm install
+npm run dev
+```
+*The UI will be available at http://localhost:5173.*
+
+## 3. Docker Deployment (Optional)
+Run the entire stack using Docker Compose from the project folder.
+
+```bash
+cd Solar_project_trichy
+docker-compose up --build
+```
